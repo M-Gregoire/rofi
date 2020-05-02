@@ -6,7 +6,7 @@
 ## Reddit : @adi1090x
 
 rofi_command="rofi -theme themes/menu/powermenu.rasi"
-uptime=$(uptime -p | sed -e 's/up //g')
+uptime=$(uptime | sed -e 's/up //g')
 #mem=$( free -h | grep -i mem | awk -F ' ' '{print $3}')
 cpu=$(sh ~/.config/rofi/bin/usedcpu)
 memory=$(sh ~/.config/rofi/bin/usedram)
@@ -41,4 +41,3 @@ case $chosen in
         openbox --exit
         ;;
 esac
-

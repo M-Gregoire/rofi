@@ -6,7 +6,7 @@
 ## Reddit : @adi1090x
 
 rofi_command="rofi -theme themes/powermenu.rasi"
-uptime=$(uptime -p | sed -e 's/up //g')
+uptime=$(uptime | sed -e 's/up //g')
 
 # Options
 shutdown="襤"
@@ -38,4 +38,3 @@ case $chosen in
         openbox --exit
         ;;
 esac
-
